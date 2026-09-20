@@ -1,0 +1,79 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /*
+     * ==========================================
+     * ROUNDS
+     * ==========================================
+     *
+     * Public users must be able to READ rounds
+     * so the main ARTIFY website can display them.
+     *
+     * Authenticated admin users can create,
+     * update and delete rounds.
+     */
+    match /rounds/{roundId} {
+
+      // Public website + admin dashboard
+      allow read: if true;
+
+      // Admin operations
+      allow create, update, delete: if request.auth != null;
+    }
+
+
+    /*
+     * ==========================================
+     * SUBMISSIONS
+     * ==========================================
+     *
+     * Participants are NOT authenticated.
+     * Therefore they need public CREATE access.
+     *
+     * Admin needs authenticated READ/UPDATE/DELETE.
+     */
+    match /submissions/{submissionId} {
+
+      // Participant submission
+      allow create: if
+        request.resource.data.status == "submitted"
+        && request.resource.data.registerNumber is string
+        && request.resource.data.registerNumber.size() == 12
+        && request.resource.data.name is string
+        && request.resource.data.department in [
+          "CSE A",
+          "CSE B",
+          "ECE",
+          "EEE",
+          "MECH",
+          "CIVIL",
+          "IT"
+        ]
+        && request.resource.data.year in [
+          "I Year",
+          "II Year",
+          "III Year",
+          "IV Year"
+        ]
+        && request.resource.data.designType in [
+          "ui",
+          "poster"
+        ]
+        && request.resource.data.fileName is string
+        && request.resource.data.fileUrl is string
+        && request.resource.data.fileUrl.size() > 0
+        && request.resource.data.submittedAt == request.time;
+
+      // Admin can view submissions
+      allow read: if request.auth != null;
+
+      // Admin can update marks / selection
+      allow update: if request.auth != null;
+
+      // Admin can delete submissions
+      allow delete: if request.auth != null;
+    }
+  }
+}
