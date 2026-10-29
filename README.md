@@ -6,15 +6,15 @@
 
 <br/>
 
+[![Live Website](https://img.shields.io/badge/LIVE%20WEBSITE-Visit%20ARTIFY-497746?style=for-the-badge&logo=firebase&logoColor=white)](https://artify26.web.app/)
+[![GitHub Repository](https://img.shields.io/badge/GITHUB-Explore%20Repository-17251A?style=for-the-badge&logo=github&logoColor=7BB875)](https://github.com/Saheera-006/Artify)
+
+<br/>
+
 <img src="https://img.shields.io/badge/React-Frontend-497746?style=for-the-badge&logo=react&logoColor=white" alt="React" />
-<img src="https://img.shields.io/badge/Firebase-Database-5C9C58?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase" />
+<img src="https://img.shields.io/badge/Firebase-Data%20Management-5C9C58?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase" />
 <img src="https://img.shields.io/badge/Cloudinary-Image%20Storage-497746?style=for-the-badge&logo=cloudinary&logoColor=white" alt="Cloudinary" />
 <img src="https://img.shields.io/badge/Gemini-AI%20Evaluation-5C9C58?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini AI" />
-
-<br/><br/>
-
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Explore%20Repository-17251A?style=for-the-badge&logo=github&logoColor=7BB875)](https://github.com/Saheera-006/Artify)
-[![Live Application](https://img.shields.io/badge/Live-Application-497746?style=for-the-badge&logo=firebase&logoColor=white)](https://artify26.web.app)
 
 </div>
 
@@ -24,15 +24,31 @@
 
 **ARTIFY** is an AI-powered design submission and evaluation platform developed for **DYNAMOZ'26**, the symposium organized by the Department of Computer Science and Engineering at University College of Engineering, Nagercoil.
 
-Built around the idea of *Think. Create. Define.*, ARTIFY brings creative design submissions, cloud image storage, and AI-assisted evaluation together in a digital platform.
+Built around the idea of *Think. Create. Define.*, ARTIFY brings creative design submissions, cloud image storage, and AI-assisted evaluation together in one digital platform.
 
 The application integrates React, Firebase, Cloudinary, and Google Gemini AI to support the design competition workflow.
+
+The ARTIFY event was conducted across **two rounds**, and I served as its **Student Event Coordinator**.
 
 <div align="center">
 
 | 🎨 Creative Submissions | ☁️ Cloud Storage | 🤖 AI Evaluation |
 |:---:|:---:|:---:|
 | Digital design workflow | Cloudinary + Firebase | Gemini AI integration |
+
+</div>
+
+## ✦ Live Application
+
+<div align="center">
+
+### Experience ARTIFY
+
+Explore the deployed design competition platform.
+
+[![Open ARTIFY](https://img.shields.io/badge/OPEN%20ARTIFY-artify26.web.app-497746?style=for-the-badge&logo=googlechrome&logoColor=white)](https://artify26.web.app/)
+
+**Live URL:** https://artify26.web.app/
 
 </div>
 
@@ -43,8 +59,8 @@ The application integrates React, Firebase, Cloudinary, and Google Gemini AI to 
 - 🔥 **Firebase Integration** — Stores submission information and associated image URLs.
 - 🤖 **Gemini AI Evaluation** — Integrates Google Gemini AI into the design evaluation workflow.
 - 📊 **CSV Export** — Supports exporting evaluation data for further analysis.
-- 🏆 **Two-Round Event** — Developed for a design competition conducted in two rounds.
-- 👩🏻‍💻 **Event Coordination** — The project is connected to my role as Student Event Coordinator for ARTIFY.
+- 🏆 **Two-Round Event** — Supports the design competition workflow conducted across two rounds.
+- 👩🏻‍💻 **Event Coordination** — I served as Student Event Coordinator for ARTIFY.
 
 ## ✦ Tech Stack
 
@@ -52,16 +68,16 @@ The application integrates React, Firebase, Cloudinary, and Google Gemini AI to 
 
 <img src="https://skillicons.dev/icons?i=react,js,vite,firebase&theme=dark" alt="React, JavaScript, Vite, Firebase" />
 
-<br/>
+<br/><br/>
 
 <img src="https://img.shields.io/badge/Cloudinary-Image%20Management-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white" alt="Cloudinary" />
 <img src="https://img.shields.io/badge/Google%20Gemini-Generative%20AI-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini" />
 
 </div>
 
-| Technology | Role |
+| Technology | Purpose |
 |---|---|
-| React | Interactive frontend |
+| React | Frontend user interface |
 | JavaScript | Application logic |
 | Vite | Development and build tooling |
 | Firebase | Application data management |
@@ -69,11 +85,11 @@ The application integrates React, Firebase, Cloudinary, and Google Gemini AI to 
 | Google Gemini API | AI-assisted design evaluation |
 | CSV | Evaluation data export |
 
-## ✦ How ARTIFY Works
+## ✦ System Architecture
 
 ```mermaid
 flowchart TD
-    A["🎨 Design Submission"] --> B["React Application"]
+    A["Design Submission"] --> B["React Application"]
     B --> C["Cloudinary Image Upload"]
     C --> D["Image URL"]
     D --> E["Firebase Submission Data"]
@@ -91,50 +107,51 @@ flowchart TD
     style H fill:#17251A,stroke:#497746,color:#FFFFFF
 ```
 
-*The diagram represents the overall workflow conceptually; actual request sequencing depends on the implementation.*
+*This diagram illustrates the main components conceptually. The actual request flow depends on the implementation.*
 
-### 1. Submit
+### How It Works
 
-Participants submit their creative designs through the application.
-
-### 2. Store
-
-Design images are uploaded to Cloudinary, while their image URLs and associated submission details are stored in Firebase.
-
-### 3. Evaluate
-
-Google Gemini AI is integrated into the design evaluation process to support AI-assisted assessment.
-
-### 4. Review and Export
-
-The platform supports reviewing evaluation information and exporting available evaluation data in CSV format.
+1. **Submit:** Participants submit their creative designs through the application.
+2. **Store:** Design images are uploaded to Cloudinary.
+3. **Save:** The image URLs and associated submission information are stored in Firebase.
+4. **Evaluate:** Google Gemini AI is integrated into the design evaluation workflow.
+5. **Review:** Evaluation information can be reviewed through the application's administrative workflow.
+6. **Export:** Available evaluation data can be exported in CSV format.
 
 ## ✦ My Role & Contribution
 
 ### Student Event Coordinator — ARTIFY
 
-I served as the **Student Event Coordinator for ARTIFY**, a design event conducted across two rounds as part of DYNAMOZ'26.
+I served as the **Student Event Coordinator for ARTIFY**, a design competition conducted across two rounds as part of DYNAMOZ'26.
 
-This experience brought together technology and event execution, connecting the digital submission and evaluation workflow with the practical requirements of organizing a college-level design competition.
+This experience brought together technology and event execution, connecting the digital submission and evaluation workflow with the practical requirements of conducting a college-level design competition.
 
-- Served as Student Event Coordinator for the ARTIFY event.
+**Key highlights:**
+
+- Served as Student Event Coordinator for ARTIFY.
 - Coordinated an event conducted across two rounds.
 - Worked on a platform integrating design submissions, cloud image storage, and AI-assisted evaluation.
-- Explored the use of generative AI in a creative competition workflow.
+- Contributed to bringing technology into a creative competition workflow.
 
 ## ✦ Application Preview
 
+Add screenshots of the actual application to showcase its interface and functionality.
+
 <div align="center">
 
-| Design Submission | Administration |
+| Design Submission | Admin Dashboard |
 |:---:|:---:|
 | Add your submission-page screenshot | Add your admin-page screenshot |
 | AI Evaluation | Evaluation Results |
-| Add your actual evaluation screenshot | Add your actual results screenshot |
+| Add your evaluation screenshot | Add your results screenshot |
 
 </div>
 
-To display screenshots, create a `screenshots` directory in this repository and replace the descriptions above with Markdown image references to your actual screenshot files.
+To add screenshots, create a `screenshots` folder in the repository and replace the placeholders with image references, for example:
+
+```markdown
+![ARTIFY Submission Page](screenshots/submission-page.png)
+```
 
 ## ✦ Run Locally
 
@@ -146,83 +163,86 @@ To display screenshots, create a `screenshots` directory in this repository and 
 - Cloudinary account and upload configuration
 - Google Gemini API access for the evaluation workflow
 
-### Installation
-
-**1. Clone the repository**
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Saheera-006/Artify.git
 ```
 
-**2. Open the project directory**
+### 2. Navigate to the Project
 
 ```bash
 cd Artify
 ```
 
-**3. Install dependencies**
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-**4. Configure environment variables**
+### 4. Configure Environment Variables
 
-Check the source code for the exact environment variable names and create the required `.env` file.
+Inspect the source code for the exact variable names required by Firebase, Cloudinary, and Gemini. Create the required `.env` file in the appropriate directory.
 
 ```env
-# Configure the variables required by your application.
+# Add the actual variable names expected by your application.
 # Firebase configuration
 # Cloudinary configuration
 # Gemini API configuration
 ```
 
-This is a placeholder template. The variable names must match those used in your project.
+This is a placeholder template. The variable names must match those referenced in the source code.
 
-**5. Start the development server**
+**Security note:** Never commit private API keys, service-account credentials, or other secrets to GitHub. Privileged API credentials should not be exposed in public frontend code.
+
+### 5. Start the Development Server
+
+For a Vite-based application:
 
 ```bash
 npm run dev
 ```
 
-**6. Build the application**
+Open the local URL displayed in the terminal.
+
+### 6. Build for Production
 
 ```bash
 npm run build
 ```
 
-Refer to `package.json` for the project's actual scripts and configuration.
+Check `package.json` for the project's actual scripts and build configuration.
 
-## ✦ Security Notes
+## ✦ Security Considerations
 
-- Never commit private API keys or service-account credentials.
-- Keep privileged Gemini credentials out of publicly accessible frontend code.
+- Keep private API keys and service-account credentials out of source control.
+- Avoid exposing privileged Gemini API credentials in public frontend code.
 - Configure appropriate Firebase Security Rules.
 - Validate uploaded files and submitted data.
-- Restrict administrative operations to authorized users.
+- Protect administrative operations with suitable authorization.
 
-These are recommended practices; check the current implementation to determine which protections are already in place.
+These are recommended practices; check the actual implementation to determine which protections are already in place.
 
-## ✦ Future Scope
+## ✦ Future Enhancements
 
 - Enhanced evaluation analytics and reports.
-- More configurable evaluation criteria.
-- Improved submission tracking.
+- Configurable evaluation criteria and scoring.
+- Improved submission tracking and status visibility.
 - Better administrative reporting.
 - Expanded result-export options.
-- Additional safeguards for AI-assisted evaluation.
+- Additional safeguards and human review for AI-assisted evaluation.
 
 ## ✦ Event Details
 
-**Event:** ARTIFY — DYNAMOZ'26
-
-**Department:** Computer Science and Engineering
-
-**Institution:** University College of Engineering, Nagercoil
-
-**Event Format:** Two-round design competition
-
-**My Role:** Student Event Coordinator
+| Detail | Information |
+|---|---|
+| Event | ARTIFY — DYNAMOZ'26 |
+| Department | Computer Science and Engineering |
+| Institution | University College of Engineering, Nagercoil |
+| Event Format | Two-round design competition |
+| My Role | Student Event Coordinator |
+| Live Website | [artify26.web.app](https://artify26.web.app/) |
 
 ## ✦ About the Developer
 
@@ -230,9 +250,11 @@ These are recommended practices; check the current implementation to determine w
 
 ### Fathima Saheera J
 
-Aspiring Full Stack Developer · Student Event Coordinator · Technology Enthusiast
+**Aspiring Full Stack Developer · Student Event Coordinator · Technology Enthusiast**
 
 A Computer Science and Engineering student interested in building practical applications, exploring emerging technologies, and bringing ideas to life through software development.
+
+<br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Saheera--006-17251A?style=for-the-badge&logo=github&logoColor=7BB875)](https://github.com/Saheera-006)
 
@@ -242,7 +264,7 @@ A Computer Science and Engineering student interested in building practical appl
 
 ## ✦ License
 
-A license has not been specified. Add a `LICENSE` file if you intend to grant others permission to reuse, modify, or distribute the project.
+A license has not been specified. Add a `LICENSE` file if you intend to grant others permission to reuse, modify, or distribute this project.
 
 ---
 
@@ -253,6 +275,8 @@ A license has not been specified. Add a `LICENSE` file if you intend to grant ot
 **THINK. CREATE. DEFINE.**
 
 *Where creativity meets technology.*
+
+[**Visit the Live Website →**](https://artify26.web.app/)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:497746,50:17251A,100:000000&height=120&section=footer" width="100%" alt="" />
 
