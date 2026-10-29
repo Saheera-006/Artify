@@ -133,25 +133,7 @@ This experience brought together technology and event execution, connecting the 
 - Worked on a platform integrating design submissions, cloud image storage, and AI-assisted evaluation.
 - Contributed to bringing technology into a creative competition workflow.
 
-## ✦ Application Preview
 
-Add screenshots of the actual application to showcase its interface and functionality.
-
-<div align="center">
-
-| Design Submission | Admin Dashboard |
-|:---:|:---:|
-| Add your submission-page screenshot | Add your admin-page screenshot |
-| AI Evaluation | Evaluation Results |
-| Add your evaluation screenshot | Add your results screenshot |
-
-</div>
-
-To add screenshots, create a `screenshots` folder in the repository and replace the placeholders with image references, for example:
-
-```markdown
-![ARTIFY Submission Page](screenshots/submission-page.png)
-```
 
 ## ✦ Run Locally
 
