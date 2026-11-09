@@ -1,0 +1,37 @@
+/* =========================================================
+   ADMIN PAGE
+========================================================= */
+
+.admin-page {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.page-heading-row {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.page-heading-row h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.page-heading-row p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.result-count {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}

@@ -1,0 +1,23 @@
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty-card {
+  margin-top: 40px;
+  padding: 70px;
+  text-align: center;
+  border: 1px solid var(--line);
+}
+
+.empty-card span,
+.admin-empty span {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.empty-card p,
+.admin-empty p {
+  color: var(--muted);
+}

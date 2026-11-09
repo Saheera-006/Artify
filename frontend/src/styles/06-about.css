@@ -1,0 +1,62 @@
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1px;
+  margin-top: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.about-large,
+.about-side {
+  background: var(--bg);
+}
+
+.about-large {
+  min-height: 330px;
+  padding: 55px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-large p {
+  max-width: 720px;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.about-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-stat {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-stat:last-child {
+  border-bottom: 0;
+}
+
+.about-stat strong {
+  color: var(--accent);
+  font-family: var(--display);
+  font-size: 30px;
+}
+
+.about-stat span {
+  color: var(--muted);
+  font-size: 12px;
+}

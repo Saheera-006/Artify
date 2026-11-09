@@ -1,0 +1,36 @@
+/* =========================================================
+   EXPORTS
+========================================================= */
+
+.export-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.export-round {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+}
+
+.export-round h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 22px;
+}
+
+.export-round p {
+  margin: 4px 0 0;
+  color: var(--dim);
+  font-size: 10px;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 8px;
+}

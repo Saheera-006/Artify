@@ -1,0 +1,62 @@
+/* =========================================================
+   QUALIFIED
+========================================================= */
+
+.standalone-select {
+  width: 190px;
+}
+
+.qualified-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.qualified-card {
+  min-height: 125px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50px 1fr auto;
+  gap: 15px;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+}
+
+.rank {
+  color: var(--accent);
+  font-family: var(--display);
+  font-size: 20px;
+}
+
+.qualified-card h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 17px;
+}
+
+.qualified-card p {
+  margin: 5px 0 0;
+  color: var(--dim);
+  font-size: 10px;
+}
+
+.qualified-marks {
+  text-align: right;
+}
+
+.qualified-marks strong,
+.qualified-marks span {
+  display: block;
+}
+
+.qualified-marks strong {
+  font-family: var(--display);
+  font-size: 28px;
+}
+
+.qualified-marks span {
+  color: var(--dim);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+}

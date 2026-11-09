@@ -1,0 +1,71 @@
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal-backdrop {
+  position: fixed;
+  z-index: 500;
+  inset: 0;
+  padding: 25px;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(10px);
+}
+
+.confirm-modal {
+  position: relative;
+  width: min(480px, 100%);
+  padding: 40px;
+  border: 1px solid var(--line);
+  background: #111412;
+  box-shadow: var(--shadow);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--line);
+  background: none;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.modal-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.confirm-modal h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 32px;
+}
+
+.confirm-modal p {
+  color: var(--muted);
+}
+
+.confirm-note {
+  margin: 20px 0;
+  padding: 14px;
+  border-left: 2px solid var(--accent);
+  background: rgba(57, 233, 135, 0.04);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

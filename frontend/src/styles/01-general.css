@@ -1,0 +1,46 @@
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.public-site {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.section {
+  width: min(1240px, calc(100% - 48px));
+  margin: auto;
+  padding: 130px 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mini-label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--dim);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 15px var(--accent);
+}

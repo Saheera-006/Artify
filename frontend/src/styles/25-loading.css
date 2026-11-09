@@ -1,0 +1,35 @@
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loading-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 15px;
+  background: var(--bg);
+}
+
+.loading-logo {
+  font-family: var(--display);
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.08em;
+}
+
+.loading-logo span {
+  color: var(--accent);
+}
+
+.loading-screen p {
+  color: var(--dim);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.public-loading {
+  min-height: 100vh;
+}

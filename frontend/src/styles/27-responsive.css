@@ -1,0 +1,453 @@
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    z-index: 150;
+    inset: 0;
+    display: block;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .sidebar-close {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    font-size: 20px;
+  }
+
+  .admin-main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .admin-menu {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    padding: 8px;
+    display: block;
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+  }
+
+  .admin-menu span {
+    display: block;
+    height: 1px;
+    margin: 5px 0;
+    background: var(--white);
+  }
+
+  .admin-topbar {
+    justify-content: flex-start;
+  }
+
+  .admin-top-right {
+    margin-left: auto;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-box {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    width: min(100% - 30px, 650px);
+    padding: 90px 0;
+  }
+
+  .nav-inner {
+    width: calc(100% - 30px);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid var(--line);
+    background: #0c0e0d;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links button {
+    padding: 13px;
+    text-align: left;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .hero h1 {
+    font-size: clamp(80px, 24vw, 170px);
+  }
+
+  .hero-line {
+    width: 90%;
+  }
+
+  .hero-bottom {
+    left: 25px;
+    right: 25px;
+  }
+
+  .hero-bottom span:first-child {
+    max-width: 220px;
+  }
+
+  .section-head {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-large {
+    min-height: 300px;
+    padding: 30px;
+  }
+
+  .about-side {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-stat {
+    min-height: 130px;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+
+  .about-stat:last-child {
+    border-right: 0;
+  }
+
+  .challenge-card {
+    padding: 30px;
+  }
+
+  .challenge-meta {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .challenge-meta div {
+    padding: 0;
+  }
+
+  .submission-card {
+    padding: 25px;
+  }
+
+  .form-grid,
+  .design-options {
+    grid-template-columns: 1fr;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-grid > div {
+    border-right: 0;
+  }
+
+  .submission-alert {
+    flex-direction: column;
+  }
+
+  .public-footer {
+    padding: 35px 25px;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .admin-content {
+    padding: 30px 20px;
+  }
+
+  .admin-topbar {
+    padding: 0 20px;
+  }
+
+  .admin-footer {
+    padding: 20px;
+  }
+
+  .dashboard-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .round-form-grid,
+  .round-switches {
+    grid-template-columns: 1fr;
+  }
+
+  .round-admin-card {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .round-admin-actions {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+
+  .qualified-grid,
+  .final-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .export-round {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    width: calc(100% - 24px);
+    padding: 70px 0;
+  }
+
+  .hero {
+    min-height: 850px;
+    padding: 130px 18px 70px;
+  }
+
+  .hero h1 {
+    font-size: 25vw;
+  }
+
+  .hero-bottom {
+    left: 18px;
+    right: 18px;
+  }
+
+  .hero-round {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section-head h2 {
+    font-size: 40px;
+  }
+
+  .guideline-row {
+    grid-template-columns: 40px 1fr 20px;
+  }
+
+  .guideline-row p {
+    padding-right: 10px;
+    font-size: 13px;
+  }
+
+  .stepper {
+    margin-bottom: 35px;
+  }
+
+  .step {
+    gap: 5px;
+  }
+
+  .step small {
+    display: none;
+  }
+
+  .submission-card {
+    padding: 18px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+
+  .success-card {
+    padding: 50px 22px;
+  }
+
+  .success-card h2 {
+    font-size: 48px;
+  }
+
+  .modal-backdrop {
+    padding: 12px;
+  }
+
+  .confirm-modal {
+    padding: 30px 20px;
+  }
+
+  .modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+
+  .admin-login-card {
+    padding: 30px 22px;
+  }
+
+  .admin-login-card h1 {
+    font-size: 38px;
+  }
+
+  .admin-topbar h1 {
+    font-size: 17px;
+  }
+
+  .admin-top-right {
+    display: none;
+  }
+
+  .admin-content {
+    padding: 25px 12px;
+  }
+
+  .admin-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .page-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .page-heading-row .primary-btn {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+
+  .admin-stat {
+    min-height: 115px;
+    padding: 15px;
+  }
+
+  .admin-stat strong {
+    font-size: 32px;
+  }
+
+  .filters-card {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    grid-column: auto;
+  }
+
+  .round-form-card {
+    padding: 18px;
+  }
+
+  .round-admin-card {
+    padding: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .round-number {
+    display: none;
+  }
+
+  .round-admin-actions {
+    grid-column: auto;
+  }
+
+  .round-admin-actions button {
+    flex: 1;
+  }
+
+  .round-admin-title {
+    flex-direction: column;
+  }
+
+  .qualified-card {
+    grid-template-columns: 35px 1fr;
+  }
+
+  .qualified-marks {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .export-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .export-buttons button {
+    width: 100%;
+  }
+
+  .preview-modal {
+    height: 95vh;
+    padding: 15px;
+  }
+
+  .preview-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .preview-header .primary-btn {
+    width: 100%;
+  }
+}

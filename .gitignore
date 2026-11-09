@@ -71,3 +71,14 @@ node_modules/
 server/.env
 server/serviceAccountKey.json
 server/node_modules/
+
+# Modular frontend and Java backend
+**/node_modules/
+**/target/
+**/dist/
+**/.env
+**/.env.local
+**/application-local.properties
+**/serviceAccountKey.json
+.idea/
+*.iml

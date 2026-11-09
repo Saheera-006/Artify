@@ -1,0 +1,50 @@
+/* =========================================================
+   FINAL
+========================================================= */
+
+.final-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.final-panel {
+  min-height: 280px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+}
+
+.final-panel h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 52px;
+  letter-spacing: -0.06em;
+}
+
+.final-panel > p {
+  margin: 5px 0 25px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.final-round-list {
+  border-top: 1px solid var(--line);
+}
+
+.final-round-list div {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.final-round-list strong {
+  font-size: 11px;
+}
+
+.final-round-list span,
+.muted {
+  color: var(--dim);
+  font-size: 10px;
+}

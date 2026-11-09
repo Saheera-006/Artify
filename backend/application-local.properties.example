@@ -1,0 +1,11 @@
+# Copy to application-local.properties in this backend directory.
+# Do not commit the populated file. Start the backend from this directory.
+artify.firebase-project-id=YOUR_EXISTING_FIREBASE_PROJECT_ID
+# Firebase Console > Authentication > Users > copy the admin user's UID.
+# Comma-separated UIDs; alternatively use a signed Firebase admin=true custom claim.
+artify.admin-uids=YOUR_ADMIN_FIREBASE_UID
+artify.allowed-origins=http://localhost:5173
+artify.cloudinary-cloud-name=YOUR_EXISTING_CLOUDINARY_CLOUD_NAME
+artify.gemini-api-key=YOUR_GEMINI_API_KEY
+# Exact model ID available to your Gemini account. Optional fallbacks separated by commas (maximum three).
+artify.gemini-models=YOUR_AVAILABLE_GEMINI_MODEL_ID

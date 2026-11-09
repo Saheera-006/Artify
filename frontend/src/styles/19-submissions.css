@@ -1,0 +1,164 @@
+/* =========================================================
+   SUBMISSIONS
+========================================================= */
+
+.filters-card {
+  margin-bottom: 15px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+}
+
+.filters-card select {
+  min-height: 42px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.search-box {
+  min-height: 42px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+}
+
+.search-box span {
+  color: var(--accent);
+  font-size: 17px;
+}
+
+.search-box input {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  background: none;
+  color: var(--white);
+  font-size: 11px;
+}
+
+.table-card {
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.submissions-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+}
+
+.submissions-table th {
+  padding: 14px 15px;
+  color: var(--dim);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.submissions-table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.participant-cell strong,
+.participant-cell small {
+  display: block;
+}
+
+.participant-cell strong {
+  font-size: 12px;
+}
+
+.participant-cell small {
+  margin-top: 2px;
+  color: var(--dim);
+  font-size: 9px;
+}
+
+.table-round {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.design-badge {
+  padding: 5px 7px;
+  border: 1px solid var(--line);
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.design-badge.ui {
+  color: #75b9ff;
+}
+
+.design-badge.poster {
+  color: #d7a4ff;
+}
+
+.date-cell strong,
+.date-cell small {
+  display: block;
+}
+
+.date-cell small {
+  margin-top: 2px;
+  color: var(--dim);
+}
+
+.view-file {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.marks-input {
+  width: 70px;
+  height: 35px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  outline: none;
+  background: #090b0a;
+  color: var(--white);
+  text-align: center;
+}
+
+.marks-input:focus {
+  border-color: var(--accent);
+}
+
+.select-toggle {
+  min-height: 34px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.select-toggle.selected {
+  border-color: var(--accent);
+  background: rgba(57, 233, 135, 0.07);
+  color: var(--accent);
+}
+
+.table-empty {
+  padding: 70px;
+  text-align: center;
+  color: var(--dim);
+}

@@ -1,0 +1,55 @@
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.success-card {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 70px 45px;
+  text-align: center;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(57, 233, 135, 0.1), transparent 45%),
+    var(--bg-card);
+}
+
+.success-mark {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 30px;
+}
+
+.success-card h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 60px;
+  letter-spacing: -0.07em;
+}
+
+.success-card p {
+  max-width: 480px;
+  margin: 15px auto 25px;
+  color: var(--muted);
+}
+
+.success-register {
+  width: fit-content;
+  margin: auto;
+  padding: 12px 20px;
+  border: 1px solid var(--line);
+  color: var(--accent);
+  font-family: var(--display);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.success-card > small {
+  display: block;
+  margin-top: 15px;
+  color: var(--dim);
+}
