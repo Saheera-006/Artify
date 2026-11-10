@@ -30,8 +30,7 @@ export const DEFAULT_CRITERIA = [
 ];
 
 export const AI_API_URL =
-  import.meta.env.VITE_AI_API_URL || "http://localhost:5000";
-
+  "https://artify-backend-83sy.onrender.com";
 export const ALLOWED_TYPES = ["image/png", "image/jpeg", "application/pdf"];
 
 export const ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg", "pdf"];
